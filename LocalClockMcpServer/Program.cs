@@ -29,7 +29,7 @@ else
     builder = Host.CreateApplicationBuilder(args);
     builder.Logging.ClearProviders();
 }
-// Add the MCP services: the transport to use (stdio) and the tools to register.
+
 var mcpServerBuilder = builder.Services
     .AddMcpServer();
 

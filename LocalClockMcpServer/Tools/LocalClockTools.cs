@@ -10,7 +10,6 @@ public class LocalClockTools()
     /// Retrieves the local date and time with daytime saving.
     /// </summary>
     /// <returns></returns>
-    /// <exception cref="InvalidOperationException"></exception>
     [McpServerTool()]
     [Description("Retrieves the local date and time with daytime saving.")]
     public string CurrentDateTime()
