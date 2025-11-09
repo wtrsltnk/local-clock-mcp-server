@@ -21,7 +21,11 @@ if (isWeb)
         webEndpoint = httpEndpoint?.ToString() ?? "http://localhost:3001";
     }
 
-    Console.WriteLine($"Opening the MCP server as web-app @ {webEndpoint}");
+    Console.Write("Opening the MCP server as web-app @ ");
+    Console.ForegroundColor = ConsoleColor.DarkGreen;
+    Console.Write(webEndpoint);
+    Console.ResetColor();
+
     builder = WebApplication.CreateBuilder(args);
 }
 else
